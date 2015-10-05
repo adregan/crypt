@@ -1,24 +1,19 @@
-(function() {
+import test from './test';
 
-	var root = this;
-	 
-	var crypt = function(obj) {
-	  if (obj instanceof crypt) return obj;
-	  if (!(this instanceof crypt)) return new crypt(obj);
-	};
+var crypt = function(obj) {
+  if (obj instanceof crypt) return obj;
+  if (!(this instanceof crypt)) return new crypt(obj);
+};
 
-	function objectToArrayBuffer(obj) {
-		
-	}
+// function objectToArrayBuffer(obj) {
+	
+// }
 
-	function makeKey() {
+// function makeKey() {
 
-	}
+// }
 
-	root.crypt = crypt;
+window.crypt = crypt;
 
-	crypt.test = function() {
-		console.log('bla');
-	}
-
-}.call(this));
+crypt.test = test;
+crypt.makeKey = makeKey;
