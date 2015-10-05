@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/adregan/crypt/issues"
   },
-  "homepage": "https://github.com/adregan/crypt#readme"
+  "homepage": "https://github.com/adregan/crypt#readme",
+  "devDependencies": {
+    "babelify": "^6.3.0"
+  }
 }
