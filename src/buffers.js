@@ -1,6 +1,6 @@
 var stringToBuffer = function(str){
   if (typeof str !== 'string') {
-    throw TypeError('Argument needs to be a string');
+    throw TypeError('stringToBuffer: argument must be a string');
     return;
   }
 
@@ -15,6 +15,9 @@ var stringToBuffer = function(str){
 };
 
 var bufferToString = function(buffer){
+  if (typeof buffer.constructor !== ArrayBuffer) {
+    throw TypeError('bufferToString: argument must be an ArrayBuffer');
+  }
   return str;
 };
 
