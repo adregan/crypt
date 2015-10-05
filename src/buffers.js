@@ -4,7 +4,7 @@ var stringToBuffer = function(str){
     return;
   }
 
-  let encoder = new TextEncoder('utf-16');
+  let encoder = new TextEncoder();
 
   let buffer = encoder.encode(str);
 
@@ -12,9 +12,10 @@ var stringToBuffer = function(str){
 };
 
 var bufferToString = function(buffer){
-  if (typeof buffer.constructor !== ArrayBuffer) {
-    throw TypeError('bufferToString: argument must be an ArrayBuffer');
-  }
+  let decoder = new TextDecoder();
+
+  let str = decoder.decode(buffer);
+
   return str;
 };
 
