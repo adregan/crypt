@@ -4,12 +4,9 @@ var stringToBuffer = function(str){
     return;
   }
 
-  // let arrayBuffer = new ArrayBuffer(str.length * 2);
-  let convertedString = [].map.call(str, (char, i) => {
-    return str.charCodeAt(i);
-  });
+  let encoder = new TextEncoder('utf-16');
 
-  let buffer = new Uint16Array(convertedString);
+  let buffer = encoder.encode(str);
 
   return buffer;
 };
