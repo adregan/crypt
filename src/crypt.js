@@ -1,4 +1,5 @@
 import test from './test';
+import { stringToBuffer } from './buffers';
 
 var crypt = function(obj) {
   if (obj instanceof crypt) return obj;
@@ -16,4 +17,4 @@ var crypt = function(obj) {
 window.crypt = crypt;
 
 crypt.test = test;
-crypt.makeKey = makeKey;
+crypt.stringToBuffer = stringToBuffer;
