@@ -1,0 +1,19 @@
+{
+  "name": "crypt",
+  "version": "1.0.0",
+  "description": "Making web crypto api easier for normal people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adregan/crypt.git"
+  },
+  "author": "Miles Robinson & Duncan Regan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adregan/crypt/issues"
+  },
+  "homepage": "https://github.com/adregan/crypt#readme"
+}
